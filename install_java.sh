@@ -20,7 +20,7 @@ tar xvf jdk-7u51-linux-x64.tar.gz
 rm -rf jdk-7u51-linux-x64.tar.gz
 mkdir -p ./java
 mv jdk1.7.0_51 ./java
-sed -i '/JAVA_HOME/d' .bash_profile
-echo "export JAVA_HOME=$HOME/java/jdk1.7.0_51" >> .bash_profile
-source .bash_profile
+sed -i '/JAVA_HOME/d' .profile
+echo "export JAVA_HOME=$HOME/java/jdk1.7.0_51" >> .profile
+source .profile
 cd -
